@@ -1,0 +1,13 @@
+/* NAVBAR */
+.logo__title {
+  color: var(--color-gray-l);
+}
+.logo__subtitle {
+  color: var(--color-gray-l);
+}
+.nav-links__link:hover {
+  color: var(--color-gray-s);
+}
+._choosen {
+  color: var(--color-black);
+}
