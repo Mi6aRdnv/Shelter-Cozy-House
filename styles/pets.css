@@ -1,12 +1,16 @@
+header {
+  background-color: var(--color-white);
+}
+
 /* NAVBAR */
 .logo__title {
   color: var(--color-gray-l);
 }
 .logo__subtitle {
-  color: var(--color-gray-l);
+  color: var(--color-black);
 }
 .nav-links__link:hover {
-  color: var(--color-gray-s);
+  color: var(--color-gray-l);
 }
 ._choosen {
   color: var(--color-black);
