@@ -52,3 +52,39 @@
   background-color: var(--color-primary-light);
   transition-duration: 0.5s;
 }
+
+/* ABOUT - SECTION*/
+.about {
+  padding: 80px 30px 100px;
+  background-color: var(--color-white);
+}
+.about__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about__img-box {
+  margin-right: 120px;
+  user-select: none;
+}
+.about__img-box img {
+  width: 100%;
+}
+.about__text-box {
+  max-width: 430px;
+}
+.about__text-box *:not(:last-child) {
+  margin-bottom: 25px;
+}
+.about__title {
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: var(--color-gray-l);
+}
+.about__text {
+  font-family: var(--second-family);
+  font-size: 15px;
+  line-height: 160%;
+  color: var(--color-gray-l);
+}
