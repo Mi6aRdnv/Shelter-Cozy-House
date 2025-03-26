@@ -193,6 +193,66 @@ footer {
   height: 3px;
 }
 
+/* PETS - SECTION */
+#pets {
+  padding: 80px 30px 100px;
+}
+.pets__box {
+  gap: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pets__title {
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--color-gray-l);
+}
+
+.card {
+  cursor: pointer;
+  border-radius: 9px;
+  background: var(--color-light-s);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition-duration: 0.5s;
+}
+.card:hover {
+  background: var(--color-white);
+  transition-duration: 0.7s;
+}
+.card:hover .card__btn {
+  background-color: var(--color-primary-light);
+  transition-duration: 0.7s;
+}
+.card__img-box {
+  width: 270px;
+  height: 270px;
+  margin-bottom: 30px;
+  user-select: none;
+}
+.card__title {
+  margin-bottom: 33px;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--color-gray-l);
+}
+.card__btn {
+  margin-bottom: 30px;
+  background: var(--color-light-s);
+  border: 2px solid var(--color-primary);
+  border-radius: 100px;
+  padding: 13.4px 43.4px;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: var(--color-black);
+}
+
 /* FOOTER */
 .footer {
   background:

@@ -16,24 +16,7 @@ header {
   color: var(--color-black);
 }
 
-/* OUR PETS */
-#pets {
-  padding: 80px 30px 100px;
-}
-.pets__box {
-  gap: 58px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.pets__title {
-  font-size: 35px;
-  line-height: 130%;
-  letter-spacing: 0.06em;
-  text-align: center;
-  color: var(--color-gray-l);
-}
-
+/* PETS - SECTION */
 .pagination-container {
   width: 100%;
   display: flex;
@@ -41,47 +24,6 @@ header {
   flex-wrap: wrap;
   gap: 30px 40px;
   justify-content: center;
-}
-.pagination-item {
-  cursor: pointer;
-  border-radius: 9px;
-  background: var(--color-light-s);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition-duration: 0.5s;
-}
-.pagination-item:hover {
-  background: var(--color-white);
-  transition-duration: 0.7s;
-}
-
-.pagination-item:hover .pagination-item__btn {
-  background-color: var(--color-primary-light);
-  transition-duration: 0.7s;
-}
-.pagination-item__img-box {
-  width: 270px;
-  height: 270px;
-  margin-bottom: 30px;
-}
-.pagination-item__title {
-  margin-bottom: 33px;
-  font-size: 20px;
-  letter-spacing: 0.06em;
-  text-align: center;
-  color: var(--color-gray-l);
-}
-.pagination-item__btn {
-  margin-bottom: 30px;
-  background: var(--color-light-s);
-  border: 2px solid var(--color-primary);
-  border-radius: 100px;
-  padding: 13.4px 43.4px;
-  font-size: 17px;
-  line-height: 130%;
-  letter-spacing: 0.06em;
-  color: var(--color-black);
 }
 
 .pagination-nav {
