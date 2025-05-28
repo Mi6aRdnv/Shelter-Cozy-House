@@ -69,3 +69,56 @@ header {
   cursor: default;
   background: var(--color-light-l);
 }
+
+/* For tablets */
+@media (max-width: 940px) {
+  /* pets - section */
+  #pets {
+    padding: 80px 30px 70px;
+  }
+  .pets__title {
+    margin-bottom: 30px;
+  }
+  .pets__box {
+    gap: 0px;
+  }
+  .pagination-container {
+    margin-bottom: 40px;
+  }
+
+  /* temporary */
+  .pagination-container .card:nth-last-of-type(-n + 2) {
+    display: none;
+  }
+}
+
+/* For mobile */
+@media (max-width: 655px) {
+  /* temporary */
+  .pagination-container .card:nth-last-of-type(-n + 5) {
+    display: none;
+  }
+}
+@media (max-width: 460px) {
+  h2 {
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 0.06em;
+  }
+  /* pets - section */
+  #pets {
+    padding: 42px 10px;
+  }
+  .pets__title {
+    margin-bottom: 0px;
+  }
+  .pets__box {
+    gap: 42px;
+  }
+  .pagination-container {
+    margin-bottom: 0px;
+  }
+  .pagination-nav {
+    gap: 10px;
+  }
+}
