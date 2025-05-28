@@ -1,4 +1,4 @@
-/* NOT ONLY - SECTION */
+/* not only - section */
 .not-only {
   width: 100%;
   padding: 180px 30px 0;
@@ -77,10 +77,8 @@
   margin-bottom: 25px;
 }
 .about__title {
-  font-size: 35px;
   line-height: 130%;
   letter-spacing: 0.06em;
-  color: var(--color-gray-l);
 }
 .about__text {
   font-family: var(--second-family);
@@ -129,11 +127,7 @@
   align-items: center;
 }
 .help__title {
-  font-size: 35px;
-  line-height: 1.3;
-  letter-spacing: 0.06em;
   text-align: center;
-  color: var(--color-gray-l);
   margin-bottom: 57px;
 }
 .help-list {
@@ -174,12 +168,6 @@
   flex-direction: column;
   gap: 20px;
 }
-.donation__title {
-  font-size: 35px;
-  line-height: 1.3;
-  letter-spacing: 0.06em;
-  color: var(--color-gray-l);
-}
 .donation__subtitle {
   font-size: 15px;
   line-height: 1.1;
@@ -209,4 +197,76 @@
 }
 .donation__img-box img {
   width: 100%;
+}
+
+/* For tablets */
+@media (max-width: 940px) {
+}
+@media (max-width: 850px) {
+  /* not only - section */
+  .not-only {
+    padding: 150px 30px 0;
+    margin-top: -120px;
+  }
+  .not-only__box {
+    flex-direction: column;
+    max-width: 569px;
+  }
+  .not-only__text-box {
+    margin: 0 54px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .not-only__text {
+    margin-bottom: 42px;
+  }
+  .not-only__button {
+    align-self: center;
+  }
+  .not-only__img-box {
+    max-width: 569px;
+    max-height: 593px;
+    margin-top: 100px;
+    margin-left: 70px;
+  }
+  .not-only__img-box img {
+    width: 100%;
+  }
+}
+
+/* For mobile */
+@media (max-width: 767.9px) {
+  /* not only - section */
+  .not-only__img-box img {
+    min-height: 271.77px;
+  }
+  .not-only {
+    padding: 150px 10px 0;
+  }
+}
+@media (max-width: 640px) {
+}
+
+@media (max-width: 460px) {
+  /* not only - section */
+  .not-only__text-box {
+    margin: 0;
+  }
+  .not-only__text {
+    text-align: center;
+  }
+  .not-only__img-box {
+    margin-top: 105px;
+    margin-left: 40px;
+  }
+  .not-only__title {
+    text-align: center;
+    font-size: 25px;
+  }
+}
+@media (max-width: 330px) {
+  /* not only - section */
+  .not-only__img-box {
+    max-width: 260px;
+  }
 }

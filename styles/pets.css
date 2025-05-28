@@ -100,11 +100,6 @@ header {
   }
 }
 @media (max-width: 460px) {
-  h2 {
-    text-align: center;
-    font-size: 25px;
-    letter-spacing: 0.06em;
-  }
   /* pets - section */
   #pets {
     padding: 42px 10px;
