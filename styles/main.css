@@ -203,6 +203,16 @@
 }
 
 /* For tablets */
+@media (max-width: 1175px) {
+  /* pets - section */
+  .slides {
+    width: 580px;
+  }
+  /* temporary */
+  .slides .card:nth-last-of-type(-n + 1) {
+    display: none;
+  }
+}
 @media (max-width: 940px) {
 }
 @media (max-width: 850px) {
@@ -263,6 +273,15 @@
   .about {
     padding: 42px 25px;
   }
+
+  /* pets - section */
+  .slides {
+    width: 270px;
+  }
+  /* temporary */
+  .slides .card:nth-last-of-type(-n + 2) {
+    display: none;
+  }
 }
 @media (max-width: 640px) {
 }
@@ -295,7 +314,21 @@
   .about__img-box {
     padding: 0 5px;
   }
+
+  /* pets - section */
+  .slider__btn-arrow {
+    order: 1;
+  }
+  .slider {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 17px 60px;
+  }
+  .card__title {
+    margin-bottom: 30px;
+  }
 }
+
 @media (max-width: 330px) {
   /* not only - section */
   .not-only__img-box {
