@@ -214,6 +214,11 @@
   }
 }
 @media (max-width: 940px) {
+  /* donation section */
+  .donation__box {
+    flex-direction: column-reverse;
+    gap: 60px;
+  }
 }
 @media (max-width: 850px) {
   /* not only - section */
@@ -298,6 +303,11 @@
   .help__box {
     padding: 42px 15px;
   }
+
+  /* donation section */
+  .donation {
+    padding: 42px 20px;
+  }
 }
 
 @media (max-width: 460px) {
@@ -366,6 +376,29 @@
   .help-list__img-box img {
     width: 100%;
   }
+
+  /* donation section */
+  .donation__credit-card-num {
+    font-size: 15px;
+    line-height: 1.1;
+    text-wrap: nowrap;
+  }
+  .donation__credit-card-box {
+    align-items: center;
+  }
+  .donation__text-box {
+    max-width: 280px;
+  }
+  .donation__text {
+    text-align: justify;
+  }
+  .donation__box {
+    gap: 42px;
+  }
+  .donation__subtitle {
+    line-height: 1.6;
+    letter-spacing: 0;
+  }
 }
 
 @media (max-width: 330px) {
@@ -377,5 +410,11 @@
   /* help section */
   .help-list__row {
     justify-content: flex-start;
+  }
+
+  /* donation section */
+  .donation__img-box {
+    max-width: 260px;
+    max-height: 135px;
   }
 }
