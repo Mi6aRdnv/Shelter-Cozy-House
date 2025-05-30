@@ -16,6 +16,14 @@ header {
   color: var(--color-black);
 }
 
+/* BURGER */
+._choosen {
+  color: var(--color-dark);
+}
+.nav-links__elm ._choosen {
+  color: var(--color-gray-l);
+}
+
 /* PETS - SECTION */
 .pagination-container {
   width: 100%;

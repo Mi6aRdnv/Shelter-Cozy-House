@@ -1,3 +1,7 @@
+/* BURGER */
+._choosen {
+  color: var(--color-light-s);
+}
 /* not only - section */
 .not-only {
   width: 100%;
