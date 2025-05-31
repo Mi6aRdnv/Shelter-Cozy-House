@@ -1,5 +1,8 @@
+:root {
+  --margin-carousel: -1030px;
+}
 /* BURGER */
-._choosen {
+._chosen {
   color: var(--color-light-s);
 }
 /* not only - section */
@@ -100,6 +103,7 @@
 }
 .slides {
   display: flex;
+  margin-left: var(--margin-carousel);
   gap: 40px;
 }
 .slider__btn-arrow {
@@ -118,6 +122,15 @@
   line-height: 130%;
   letter-spacing: 0.06em;
   color: var(--color-black);
+}
+.slides-wrapper {
+  overflow: hidden;
+  width: 990px;
+}
+.collection {
+  display: flex;
+  gap: 90px;
+  width: 990px;
 }
 
 /* HELP SECTION */
@@ -208,12 +221,18 @@
 
 /* For tablets */
 @media (max-width: 1175px) {
+  :root {
+    --margin-carousel: -620px;
+  }
   /* pets - section */
-  .slides {
+  .slides-wrapper {
     width: 580px;
   }
-  /* temporary */
-  .slides .card:nth-last-of-type(-n + 1) {
+  .collection {
+    gap: 40px;
+    width: 580px;
+  }
+  .collection .card:last-child {
     display: none;
   }
 }
@@ -281,6 +300,10 @@
 
 /* For mobile */
 @media (max-width: 767.9px) {
+  :root {
+    --margin-carousel: -310px;
+  }
+
   /* not only - section */
   .not-only__img-box img {
     min-height: 271.77px;
@@ -295,11 +318,14 @@
   }
 
   /* pets - section */
-  .slides {
+  .slides-wrapper {
     width: 270px;
   }
-  /* temporary */
-  .slides .card:nth-last-of-type(-n + 2) {
+  .collection {
+    gap: 40px;
+    width: 270px;
+  }
+  .collection .card:nth-last-of-type(2) {
     display: none;
   }
 
@@ -351,9 +377,6 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 17px 60px;
-  }
-  .card__title {
-    margin-bottom: 30px;
   }
 
   /* help section */
@@ -421,4 +444,33 @@
     max-width: 260px;
     max-height: 135px;
   }
+}
+
+/* ANIMATION */
+@keyframes move-right {
+  from {
+    margin-left: var(--margin-carousel);
+  }
+  to {
+    margin-left: calc(2 * var(--margin-carousel));
+  }
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 1.3s;
+}
+
+@keyframes move-left {
+  from {
+    margin-left: var(--margin-carousel);
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 1.3s;
 }

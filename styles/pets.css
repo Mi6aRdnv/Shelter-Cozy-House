@@ -17,10 +17,10 @@ header {
 }
 
 /* BURGER */
-._choosen {
+._chosen {
   color: var(--color-dark);
 }
-.nav-links__elm ._choosen {
+.nav-links__elm ._chosen {
   color: var(--color-gray-l);
 }
 

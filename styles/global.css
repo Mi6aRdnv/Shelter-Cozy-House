@@ -182,12 +182,12 @@ h3 {
 .nav-links__link:hover {
   color: var(--color-light-s);
 }
-._choosen {
+._chosen {
   cursor: default;
   position: relative;
   padding-bottom: 3px;
 }
-._choosen::after {
+._chosen::after {
   content: '';
   position: absolute;
   background: var(--color-primary);
@@ -474,5 +474,10 @@ h3 {
   }
   .footer__img-box {
     padding: 0 20px;
+  }
+
+  /* pets - section */
+  .card__title {
+    margin-bottom: 30px;
   }
 }
