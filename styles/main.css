@@ -113,6 +113,11 @@
   border: 2px solid var(--color-primary);
   padding: 21px 17px;
   user-select: none;
+  transition-duration: 0.5s;
+}
+.slider__btn-arrow:hover {
+  background: var(--color-primary);
+  transition-duration: 0.5s;
 }
 .pets__btn {
   padding: 15px 45px;
@@ -122,6 +127,11 @@
   line-height: 130%;
   letter-spacing: 0.06em;
   color: var(--color-black);
+  transition-duration: 0.5s;
+}
+.pets__btn:hover {
+  background-color: var(--color-primary-light);
+  transition-duration: 0.5s;
 }
 .slides-wrapper {
   overflow: hidden;
@@ -208,12 +218,18 @@
   letter-spacing: 0.06em;
   color: var(--color-gray-l);
 }
+.donation__credit-card-img-box {
+  user-select: none;
+}
 .donation__text {
   font-family: var(--second-family);
   font-style: italic;
   font-size: 12px;
   line-height: 1.5;
   color: #b2b2b2;
+}
+.donation__img-box {
+  user-select: none;
 }
 .donation__img-box img {
   width: 100%;

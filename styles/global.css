@@ -429,6 +429,10 @@ h3 {
   border-radius: 100px;
   border: 2px solid var(--color-primary);
 }
+.popup__close-btn:hover {
+  background: var(--color-primary-light);
+  transition-duration: 0.5s;
+}
 .popup__content {
   display: flex;
   border-radius: 9px;
@@ -436,6 +440,7 @@ h3 {
   background: var(--color-light-s);
 }
 .popup__img-box {
+  user-select: none;
   border-radius: 9px;
   height: 500px;
 }
