@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pets</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/icons/favicon.ico"
+    />
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="../../styles/pets.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav _container">
+        <a class="logo" href="#">
+          <h1 class="logo__title">Cozy House</h1>
+          <p class="logo__subtitle">Shelter for pets in Boston</p>
+        </a>
+        <ul class="nav-links">
+          <li class="nav-links__elm">
+            <a href="../main/index.html" class="nav-links__link"
+              >About the shelter</a
+            >
+          </li>
+          <li class="nav-links__elm">
+            <a href="#" class="nav-links__link _chosen">Our pets</a>
+          </li>
+          <li class="nav-links__elm">
+            <a href="../main/index.html#help" class="nav-links__link"
+              >Help the shelter</a
+            >
+          </li>
+          <li class="nav-links__elm">
+            <a href="#footer" class="nav-links__link">Contacts</a>
+          </li>
+        </ul>
+        <button
+          type="button"
+          aria-label="Toggle burger menu"
+          class="burger-btn"
+        >
+          <span class="burger-btn__elm"></span>
+          <span class="burger-btn__elm"></span>
+          <span class="burger-btn__elm"></span>
+        </button>
+      </nav>
+      <div class="burger-wrapper">
+        <div class="burger">
+          <ul class="nav-links--burger">
+            <li class="nav-links__elm nav-links__elm--burger">
+              <a
+                href="../main/index.html"
+                class="nav-links__link nav-links__link--burger"
+                >About the shelter</a
+              >
+            </li>
+            <li class="nav-links__elm nav-links__elm--burger">
+              <a
+                href="#"
+                class="nav-links__link nav-links__link--burger _chosen"
+                >Our pets</a
+              >
+            </li>
+            <li class="nav-links__elm nav-links__elm--burger">
+              <a
+                href="../main/index.html#help"
+                class="nav-links__link nav-links__link--burger"
+                >Help the shelter</a
+              >
+            </li>
+            <li class="nav-links__elm nav-links__elm--burger">
+              <a href="#footer" class="nav-links__link nav-links__link--burger"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section id="pets">
+        <div class="pets__box _container">
+          <h3 class="pets__title">
+            Our friends who <br />
+            are looking for a house
+          </h3>
+          <div class="pagination-container popup-listening-area">
+            <!-- add new items using JS -->
+          </div>
+          <div class="pagination-nav">
+            <button
+              class="pagination-nav__btn first-page-btn --disable"
+              type="button"
+            >
+              &lt;&lt;
+            </button>
+            <button
+              class="pagination-nav__btn left-btn --disable"
+              type="button"
+            >
+              &lt;
+            </button>
+            <button class="pagination-nav__counter-btn" type="button">1</button>
+            <button class="pagination-nav__btn right-btn" type="button">
+              &gt;
+            </button>
+            <button class="pagination-nav__btn last-page-btn" type="button">
+              &gt;&gt;
+            </button>
+          </div>
+        </div>
+        <div class="wrapper-popup">
+          <div class="popup">
+            <button
+              type="button"
+              class="popup__close-btn img-box"
+              aria-label="Close popup button"
+            >
+              <img
+                src="../../assets/icons/close-btn.svg"
+                alt="Close popup button"
+              />
+            </button>
+            <div class="popup__content"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer__box _container">
+        <div class="footer__nav-wrapper">
+          <div class="footer__contacts">
+            <h3 class="footer__contacts-title">
+              For questions and suggestions
+            </h3>
+            <a
+              href="mailto:email@shelter.com"
+              class="footer__contact-box email-link"
+            >
+              <div class="footer__contact-img-box">
+                <img
+                  src="../../assets/icons/icon-email.svg"
+                  alt="icon of email"
+                  class="footer__contact-img"
+                />
+              </div>
+              <p class="footer__contact-text">email@shelter.com</p>
+            </a>
+            <a href="tel:+136745677554" class="footer__contact-box number-link">
+              <div class="footer__contact-img-box">
+                <img
+                  src="../../assets/icons/icon-phone.svg"
+                  alt="icon of phone"
+                  class="footer__contact-img"
+                />
+              </div>
+              <p class="footer__contact-text">
+                +13&nbsp;674&nbsp;567&nbsp;75&nbsp;54
+              </p>
+            </a>
+          </div>
+          <div class="footer__locations-box">
+            <h3 class="footer__locations-title">
+              We are waiting for your visit
+            </h3>
+            <a
+              href="https://maps.app.goo.gl/v6Cf5R4QWuY1Xvik7"
+              target="_blank"
+              class="footer__location-box"
+            >
+              <div class="footer__location-img-box">
+                <img
+                  src="../../assets/icons/icon-marker.svg"
+                  alt="icon of location marker"
+                  class="footer__location-img"
+                />
+              </div>
+              <p class="footer__location-text">
+                1 Central Street, Boston (entrance from the store)
+              </p>
+            </a>
+            <a
+              href="https://maps.app.goo.gl/PAzXsryWvUn8ujN7A"
+              target="_blank"
+              class="footer__location-box"
+            >
+              <div class="footer__location-img-box">
+                <img
+                  src="../../assets/icons/icon-marker.svg"
+                  alt="icon of location marker"
+                  class="footer__location-img"
+                />
+              </div>
+              <p class="footer__location-text">18 South Park, London</p>
+            </a>
+          </div>
+        </div>
+        <div class="footer__img-box">
+          <img
+            src="../../assets/images/bg-footer-puppy.png"
+            alt="image of a puppy"
+            class="footer-img"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../scripts/common.js"></script>
+    <script src="../../scripts/pets.js"></script>
+  </body>
+</html>
